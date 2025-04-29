@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Title -->
+    <h1>
+        In-Class Exercise (Quiz)
+    </h1>
+    <!-- App Title -->
+    <h2>Customer Contact Queue</h2>
+    <!-- Form -->
+    <form>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName"><br>
+        <label for="age">Age</label>
+        <input type="number" id="age"><br>
+        <label for="mail">Email</label>
+        <input type="email" id="mail"><br>
+    </form><br>
+    <button onclick="AddToQueue()">Add to Queue</button>
+    <!-- If field not filled, add to queue changes text of the red text -->
+    <p id="FillFieldWarn"></p>
+
+    <p>Total in queue:<span id="QueueTotal"></span></p>
+    <p id="displayedCusts"></p>
+
+    <button onclick="DisplayQueue()">Display Queue</button>
+    <p id="emptyQueue"></p>
+</body>
+</html>
